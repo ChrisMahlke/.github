@@ -1,0 +1,13 @@
+name: Ask a question
+description: About using the app, or about its privacy policy.
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: The app's support page may already have the answer. Issues are public, so leave out anything you'd rather not share.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true

@@ -1,0 +1,27 @@
+name: Report a problem
+description: Something in the app isn't working, or shows the wrong thing.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Issues are public, so leave out anything you'd rather not share, such as your exact location.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, what the app showed, and what you expected to see. Screenshots help.
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and system version
+      placeholder: iPhone 16 Pro, iOS 26.1
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: Shown in the app's settings or About screen.
+      placeholder: 1.0 (2)
